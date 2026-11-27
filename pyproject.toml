@@ -1,0 +1,24 @@
+[project]
+name = "octane"
+version = "0.0.0"
+description = "Dados de treino e saúde de relógios Garmin e Amazfit, com insights por LLM"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "garmin-fit-sdk>=21.222.0",
+    "pandas>=3.1.1",
+    "plotly>=7.2.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "jupyterlab>=4.6.6",
+    "nbformat>=5.11.1",
+    "nbstripout>=0.9.2",
+    "pre-commit>=4.7.0",
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
+]
