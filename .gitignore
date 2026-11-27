@@ -1,0 +1,44 @@
+# --- Segredos (nunca no Git) ---
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# --- Dados de saúde exportados dos relógios (sensíveis) ---
+data/
+*.fit
+*.FIT
+*.gpx
+*.tcx
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# --- Ferramentas de teste e lint ---
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Supabase CLI (arquivos locais) ---
+supabase/.branches/
+supabase/.temp/
+
+# --- Claude Code (configuração pessoal) ---
+.claude/settings.local.json
+
+# --- Editores e sistema operacional ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
